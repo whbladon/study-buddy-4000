@@ -92,10 +92,16 @@ router.get("/classes/:class_id", classesController.getClass, (req, res) => {
   return res.status(200).json(res.locals.classes);
 });
 
+//get class based on school id
+router.get("/classes/school/:school_id", classesController.getClassesBySchool, (req, res) => {
+  return res.status(200).json(res.locals.classes)
+})
+
+
 //------POST-----
 //post route for create new class, body.class_name, body.subject and set body.school_name
 router.post("/classes/", classesController.createClass, (req, res) => {
-  return res.status(200).send("successfully created school");
+  return res.status(200).send("successfully created class");
 });
 
 //post route for update class name by id, set body.class_name

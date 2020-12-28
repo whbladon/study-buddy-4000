@@ -5,11 +5,16 @@ import UpdateUser from "./UpdateUser.jsx";
 import CreateEvent from "./CreateEvent.jsx";
 
 export default function Homepage() {
+
+
+  
+
   let match = useRouteMatch();
   return (
     <div className="main_container">
       <p>main routing container</p>
       <Switch>
+        side
         <Route path={`${match.path}/userpage`}>
           <UpdateUser />
         </Route>
