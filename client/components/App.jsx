@@ -18,6 +18,7 @@ class App extends Component {
       selectedClass_id: "1",
     };
 
+<<<<<<< HEAD
     this.selectSchool = (school_id) => {
       this.setState((state) => ({
         selectedSchool_id: school_id,
@@ -25,6 +26,11 @@ class App extends Component {
     };
   }
 
+=======
+  //     )
+  // }
+  
+>>>>>>> 128619f388ae113a58b8fd40108e46c6f8e46376
   render() {
 
     return (
